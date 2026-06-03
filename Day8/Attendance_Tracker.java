@@ -27,22 +27,22 @@ public class Attendance_Tracker {
 			arr[i]= sc.nextInt();
 		}
 		
-		double count1=0,count2=0;
+		double present=0,absent=0;
 		for(int i=0;i<arr.length;i++)
 		{
 			if(arr[i]==1)
 			{
-				count1++;
+				present++;
 			}
 			else
 			{
-				count2++;
+				absent++;
 			}
 		}
-		double percentage =((count1/10)*100);
+		double percentage =((present/10)*100);
 		
-		System.out.println("Total present students: "+count1);
-		System.out.println("Total absent students: "+count2);
+		System.out.println("Total present students: "+present);
+		System.out.println("Total absent students: "+absent);
 		System.out.println("Attendance percentage: "+percentage+"%");
 		sc.close();
 	}
